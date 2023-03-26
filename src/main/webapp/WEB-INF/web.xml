@@ -1,0 +1,29 @@
+
+
+<web-app version="2.4"
+ xmlns="http://java.sun.com/xml/ns/j2ee"
+ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+ xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd" >
+
+  <display-name>Archetype Created Web Application</display-name>
+  <servlet>
+  	<servlet-name>Api</servlet-name>
+  	<display-name>Api</display-name>
+  	<description></description>
+  	<servlet-class>Controller.Api</servlet-class>
+  </servlet>
+  <servlet>
+  	<servlet-name>CountryController</servlet-name>
+  	<display-name>CountryController</display-name>
+  	<description></description>
+  	<servlet-class>Controller.CountryController</servlet-class>
+  </servlet>
+  <servlet-mapping>
+  	<servlet-name>Api</servlet-name>
+  	<url-pattern>/Api</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+  	<servlet-name>CountryController</servlet-name>
+  	<url-pattern>/CountryController</url-pattern>
+  </servlet-mapping>
+</web-app>
